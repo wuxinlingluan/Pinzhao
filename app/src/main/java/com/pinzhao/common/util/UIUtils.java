@@ -2,13 +2,10 @@ package com.pinzhao.common.util;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.os.Handler;
-import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.widget.TextView;
@@ -30,7 +27,6 @@ public class UIUtils {
     }
 
     public static Resources getResources() {
-        System.out.println("+++++++++++"+ getContext().toString());
         return getContext().getResources();
     }
 
@@ -138,7 +134,7 @@ public class UIUtils {
 
     /**
      *
-     * @param dp转换为像素
+     * @param
      * @param dp
      * @return
      */
