@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆形图片控件 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!-- 文本右上角画小红点 -->
+    <declare-styleable name="RedTipTextView">
+        <attr name="redTipsVisibility">
+            <enum name="invisible" value="0"></enum>
+            <enum name="visible" value="1"></enum>
+            <enum name="gone" value="2"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!-- 底部菜单带有提醒 -->
+    <declare-styleable name="ButtomMenuWithBadge">
+
+        <!-- 初始显示的图标 -->
+        <attr name="src" format="reference" />
+        <!-- 图标下显示的文字，不要太长！ -->
+        <attr name="text" format="string" />
+        <!-- 文字的大小 -->
+    </declare-styleable>
+    <!-- 定义滚动选择器 -->
+    <declare-styleable name="PickerView">
+
+        <!-- 没选中时的文字颜色 -->
+        <attr name="normalTextColor" format="color" />
+        <!-- 没选中时的文字大小 -->
+        <attr name="normalTextSize" format="dimension" />
+        <!-- 选中时的文字颜色 -->
+        <attr name="selectedTextColor" format="color" />
+        <!-- 选中时的文字大小 -->
+        <attr name="selectedTextSize" format="dimension" />
+        <!-- 显示多少个内容 -->
+        <attr name="itemNumber" format="integer" />
+        <!-- 线的颜色 -->
+        <attr name="lineColor" format="color" />
+        <!-- 线的宽度 -->
+        <attr name="lineWidth" format="dimension" />
+    </declare-styleable>
+    <!-- 表情菜单 -->
+    <declare-styleable name="EmojiChatIconMenu">
+        <attr name="emojiChatIconRows" format="integer" />
+        <attr name="emojiChatIconColumns" format="integer" />
+    </declare-styleable>
+    <!-- 扩展菜单 -->
+    <declare-styleable name="ChatExtendMenu">
+        <attr name="numColumns" format="integer" />
+    </declare-styleable>
+
+    <!-- 聊天信息集合 -->
+
+    <declare-styleable name="ChatMessageListView">
+        <attr name="msgListMyBubbleBackground" format="reference" />
+        <attr name="msgListOtherBubbleBackground" format="reference" />
+        <attr name="msgListShowUserHeadPicture" format="boolean" />
+        <attr name="msgListShowUserNick" format="boolean" />
+    </declare-styleable>
+    <!-- 支付密码框 -->
+    <declare-styleable name="WithdrawPasswordInputView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordWidth" format="dimension" />
+        <attr name="passwordColor" format="color" />
+        <attr name="passwordRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- 下拉回弹的ScrollView -->
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+    <!-- 下拉缩放回弹的ScrollView -->
+    <declare-styleable name="PullToZoomScrollView">
+        <attr name="scrollHeadView" format="reference" />
+        <attr name="scrollContentView" format="reference" />
+        <attr name="scrollZoomView" format="reference" />
+    </declare-styleable>
+    <!-- 定义滚轮选择器 -->
+    <declare-styleable name="WheelView">
+        <attr name="otherTextColor" format="color" />
+        <attr name="currentTextColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="unitHightPadding" format="dimension" />
+        <attr name="itemNumbers" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+</resources>

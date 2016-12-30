@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/custom_title_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.newlotus.view.ButtomMenuWithBadge
+        android:id="@+id/bmwb_home"
+        style="@style/style_Tabbutton"
+        android:textSize="12sp"
+        app:src="@drawable/menu_home_normal"
+        app:text="@string/tab_home" >
+    </com.newlotus.view.ButtomMenuWithBadge>
+
+    <com.newlotus.view.ButtomMenuWithBadge
+        android:id="@+id/bmwb_message"
+        style="@style/style_Tabbutton"
+        android:textSize="12sp"
+        app:src="@drawable/menu_message_normal"
+        app:text="@string/tab_message" >
+    </com.newlotus.view.ButtomMenuWithBadge>
+
+    <com.newlotus.view.ButtomMenuWithBadge
+        android:id="@+id/bmwb_order"
+        style="@style/style_Tabbutton"
+        android:textSize="12sp"
+        app:src="@drawable/menu_order_normal"
+        app:text="@string/tab_order" >
+    </com.newlotus.view.ButtomMenuWithBadge>
+
+    <com.newlotus.view.ButtomMenuWithBadge
+        android:id="@+id/bmwb_me"
+        style="@style/style_Tabbutton"
+        android:textSize="12sp"
+        app:src="@drawable/menu_me_normal"
+        app:text="@string/tab_me" >
+    </com.newlotus.view.ButtomMenuWithBadge>
+
+</LinearLayout>
