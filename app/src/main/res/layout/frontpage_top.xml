@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:id="@+id/ll_top_root"
+    android:orientation="horizontal" >
+  <LinearLayout
+      android:layout_width="50dp"
+      android:layout_marginLeft="15dp"
+      android:padding="3dp"
+      android:clickable="true"
+      android:id="@+id/ll_scan"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <ImageView
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginLeft="4dp"
+          android:src="@drawable/scan"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="11sp"
+          android:layout_marginLeft="4dp"
+          android:text="扫一扫"/>
+  </LinearLayout>
+<SearchView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="0dp"/>
+
+</LinearLayout>

@@ -3,6 +3,7 @@ package com.pinzhao.android.view;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -57,7 +58,7 @@ public class ButtomMenuWithBadge extends LinearLayout {
 
             }
         }
-
+        setTextColor(Color.GRAY);
         setText(mText);
         setGravity(Gravity.TOP | Gravity.RIGHT);
         setTextTopIamge(srcDrawable);
@@ -119,6 +120,7 @@ public class ButtomMenuWithBadge extends LinearLayout {
      */
     public void setTextColor(int color) {
         tv_text.setTextColor(color);
+
     }
 
     /**

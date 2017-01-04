@@ -14,8 +14,8 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.meizu.flyme.reflect.StatusBarProxy;
-import com.pinzhao.android.activity.MainActivity;
 import com.pinzhao.R;
+import com.pinzhao.android.activity.MainActivity;
 import com.pinzhao.common.util.CommonUtils;
 import com.pinzhao.common.util.FlymeUtils;
 import com.pinzhao.common.util.LogUtils;
@@ -29,6 +29,8 @@ import java.lang.reflect.Method;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+
+import butterknife.ButterKnife;
 
 /**
  * Created by ${sheldon} on 2016/12/30.
@@ -52,13 +54,15 @@ public abstract class BaseActivity extends FragmentActivity {
         metricsPhoneDensity();
         // 初始化view
         mRoot = initView();
-        // 初始化系统状态栏
-//		initSystemStateBar();
-//		changeSystemStateBarBlackColorDependOs();
-        // 初始化数据
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            //透明状态栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//            //透明导航栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+//        }
+        ButterKnife.bind(this);
         initData();
         initEvent();
-
     }
 
     /**
@@ -189,6 +193,7 @@ public abstract class BaseActivity extends FragmentActivity {
         }
     }
 
+
     /**
      * 测量当前手机的像素密度值
      */
@@ -206,9 +211,6 @@ public abstract class BaseActivity extends FragmentActivity {
 
     }
 
-    protected void closeSystemStateBar() {
-
-    }
 
     /**
      * 小米系统启动状态栏为黑色字体
@@ -257,9 +259,7 @@ public abstract class BaseActivity extends FragmentActivity {
     /**
      * 初始化事件
      */
-    protected void initEvent() {
-
-    }
+    protected void initEvent(){};
 
     @Override
     protected void onDestroy() {

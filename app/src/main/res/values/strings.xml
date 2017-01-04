@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">首页</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_message">消息</string>
+    <string name="tab_order">订单</string>
+    <string name="tab_me">我</string>
 </resources>

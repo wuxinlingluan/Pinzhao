@@ -21,4 +21,12 @@ public interface PinzhaoConstants {
     String USER_TYPE = "userType";
     //卖家
     String SELLER_ROLE = "1";
+    //首页
+    int HOME_TAG=0;
+    //消息
+    int MESSAGE_TAG=1;
+    //订单
+    int ORDER_TAG=2;
+    //我的界面
+    int ME_TAG=3;
 }
